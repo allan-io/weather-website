@@ -10,7 +10,7 @@
         locationOutput.textContent = 'Loading...'
         forecastOutput.textContent = ''
         
-        fetch(`http://localhost:3000/weather?address=${inputValue.value}`)
+        fetch(`/weather?address=${inputValue.value}`)
             .then((response) => {
                 response.json().then(data => {
                     if (data.error) {
