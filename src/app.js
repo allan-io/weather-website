@@ -5,7 +5,7 @@ const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
 const app = express()
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 5000
 
 // define paths for expree configs
 const publicDirectoryPath = path.join(__dirname, '../public')
@@ -69,12 +69,6 @@ app.get('/weather', (req, res) => {
             })
         })
     })
-
-    // res.send({
-    //     forecast: "good Lord its a typhoon",
-    //     locatioin: "Bermuda",
-    //     address: req.query.address
-    // })
 })
 
 app.get('/help/*', (req, res) => {
