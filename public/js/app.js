@@ -1,4 +1,3 @@
-
 {
     const weatherForm = document.querySelector('form')
     const inputValue = document.querySelector('input')
