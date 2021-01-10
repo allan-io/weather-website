@@ -18,19 +18,19 @@
 
 <br>
 
-### Description {#heading1 .style}
+### Description
 
 This app uses asynchronous Javascript in order to make requests to multiple apis [weatherstack.com](https://weatherstack.com/documentation) and [mapbox.com](https://docs.mapbox.com/). You can search the weather anywhere in the world by many different types of querries such as zipcode, physical location, city, amongst others.
 <br>
 
-### Future Iterations {#heading2 .style}
+### Future Iterations
 
 - add user login authentication
 - save multiple weather forcast by location
 
 <br>
 
-### Dev Scripts {#heading3 .style}
+### Dev Scripts
 
     
 | Command| Description |
@@ -39,11 +39,4 @@ This app uses asynchronous Javascript in order to make requests to multiple apis
 | npm run dev | open localhost listening for changes on hbs and js files using nodemon |
 | npm run start | deployment run script |
 
-
-
-<style>
-    .style {
-        color: #22d1ee;
-    }
-</style>
 
