@@ -39,4 +39,5 @@ This app uses asynchronous Javascript in order to make requests to multiple apis
 | npm run dev | open localhost listening for changes on hbs and js files using nodemon |
 | npm run start | deployment run script |
 
+❤️
 
