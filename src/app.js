@@ -20,7 +20,6 @@ hbs.registerPartials(partialsPath)
 // set up static directory to serve
 app.use(express.static(publicDirectoryPath))
 
-
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather',
@@ -43,12 +42,21 @@ app.get('/help', (req, res) => {
     })
 })
 
+app.get('/users/sign-up', (req, res) => {
+    const { fname, lname, email, password } = req.query
+    console.log(fname, lname, email, password)
+    res.render('sign-up', {
+        names: `${fname} ${lname}`
+    })
+})
+
 app.get('/weather', (req, res) => {
     if (!req.query.address) {
         return res.send({
             error: 'Please provide a address'
         })
     }
+
 
     geocode(req.query.address, (error, { longitude, latitude, location } = {} ) => {
         if (error) {
